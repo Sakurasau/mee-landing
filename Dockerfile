@@ -27,6 +27,6 @@ RUN pnpm install
 
 RUN pnpm run build:web
 
-EXPOSE 3000
+EXPOSE 3001
 
 CMD ["pnpm", "run", "serve:web"]
