@@ -1,9 +1,11 @@
+import MainSection from '@/widgets/main-section'
 import { FC } from 'react'
 
 const MainPage: FC = () => {
   return (
     <>
-      <h1 className="mx-auto max-w-7xl">
+      <MainSection />
+      {/* <h1 className="mx-auto max-w-7xl">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fringilla
         luctus augue eu vehicula. Sed vehicula et neque vel ornare. Sed pulvinar
         nisi ornare, lacinia eros at, pellentesque odio. Donec accumsan, libero
@@ -450,7 +452,7 @@ const MainPage: FC = () => {
         nec, congue ut sem. Aliquam erat volutpat. Ut venenatis ante nec quam
         feugiat consequat. Fusce tristique faucibus odio ornare suscipit. Mauris
         a dui ac diam tempus tempor condimentum at erat.
-      </h1>
+      </h1> */}
     </>
   )
 }
