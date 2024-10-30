@@ -1,6 +1,8 @@
 import { cn } from '@/shared/lib/cn'
 import { useEffect, useRef, useState } from 'react'
 
+// https://ui.aceternity.com/
+
 export const BackgroundGradientAnimation = ({
   gradientBackgroundStart = 'rgb(108, 0, 162)',
   gradientBackgroundEnd = 'rgb(0, 17, 82)',

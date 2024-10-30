@@ -1,5 +1,4 @@
-import { LineMdChevronUp } from '@/shared/icons/LineMdChevronUp'
-import { H1, P } from '@/shared/typography/typography'
+import { H1 } from '@/shared/typography/typography'
 import { BackgroundGradientAnimation } from '@/shared/ui/background-gradient-animation'
 import { FC } from 'react'
 
@@ -23,11 +22,12 @@ const MainSection: FC = () => {
           <H1 className="m-auto block">
             Welcome to <span className="text-primary">Mee</span>
           </H1>
-          <button className="mx-auto flex flex-col items-center -space-y-1 p-2 text-center">
+          {/* <button className="mx-auto flex flex-col items-center -space-y-1 p-2 text-center">
             <P>scroll down</P>
             <LineMdChevronUp className="size-5 rotate-180" />
-          </button>
+          </button> */}
         </div>
+        <div className="absolute bottom-0 z-30 h-[2%] w-full bg-gradient-to-b from-transparent to-base-100" />
       </BackgroundGradientAnimation>
     </section>
   )
