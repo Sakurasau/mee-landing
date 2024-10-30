@@ -25,8 +25,8 @@ COPY . .
 
 RUN pnpm install
 
-RUN pnpm run build:web
+RUN pnpm run build
 
 EXPOSE 3001
 
-CMD ["pnpm", "run", "serve:web"]
+CMD ["pnpm", "run", "serve"]
