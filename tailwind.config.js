@@ -1,6 +1,19 @@
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ['./src/**/*.{js,jsx,ts,tsx}'],
+  daisyui: {
+    themes: [
+      'light',
+      'dark',
+      'night',
+      {
+        'bright-night': {
+          ...require('daisyui/src/theming/themes')['night'],
+          'base-100': 'rgb(0, 14, 52)',
+        },
+      },
+    ],
+  },
   theme: {
     extend: {
       animation: {
