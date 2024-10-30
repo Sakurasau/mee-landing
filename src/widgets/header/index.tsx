@@ -1,6 +1,6 @@
 import { LineMdGithub } from '@/shared/icons/LineMdGithub'
 import { cn } from '@/shared/lib/cn'
-import Avatar from '@/shared/ui/Avatar'
+import Avatar from '@/shared/ui/avatar'
 import { FC } from 'react'
 
 interface HeaderProps {
@@ -13,7 +13,7 @@ const Header: FC<HeaderProps> = ({ classNames }) => {
   return (
     <div
       className={cn(
-        'navbar bg-base-100 bg-opacity-70 backdrop-blur transition-shadow',
+        'navbar bg-base-100 bg-opacity-20 backdrop-blur transition-shadow',
         classNames?.wrapper,
       )}>
       <a

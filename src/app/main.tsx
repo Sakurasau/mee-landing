@@ -7,9 +7,9 @@ import Header from '@/widgets/header'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <main className="mx-auto flex w-full flex-col">
-      <Header classNames={{ wrapper: 'sticky top-0 z-50 px-4' }} />
-      <div className="max-w-[100vw] px-4">
+    <main className="relative mx-auto flex w-full flex-col">
+      <Header classNames={{ wrapper: 'top-0 absolute z-50 px-4' }} />
+      <div className="max-w-[100vw]">
         <MainPage />
       </div>
     </main>
