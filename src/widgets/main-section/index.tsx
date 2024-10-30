@@ -20,20 +20,19 @@ const sloganWords = ['beautiful', 'seamless', 'powerful', 'effortless']
 
 const Content = () => (
   <>
-    <div className="m-auto block text-wrap">
+    <div className="m-auto block text-wrap lg:w-[570px]">
       <H1>
         Welcome to{' '}
         <a className="text-primary" href="/c">
           Mee
         </a>
       </H1>
-      <H2 className="w-[570px]">
-        The messenger that’s
-        <FlipWords words={sloganWords} />
+      <H2 className="text-wrap">
+        The messenger that’s <FlipWords words={sloganWords} />
         for you
       </H2>
       <a
-        className="group btn btn-neutral btn-active ml-auto mt-6 flex w-fit text-lg text-primary"
+        className="group btn btn-neutral btn-active ml-auto mt-6 flex w-fit text-base text-primary lg:text-lg"
         href="/c">
         Try Mee
         <LineMdChevronUp className="inline-block size-6 rotate-90 transform transition-transform duration-200 group-hover:translate-x-1" />
@@ -50,7 +49,7 @@ const MainSection: FC = () => {
   return (
     <section id="main" className="min-h-screen w-full">
       <BackgroundGradientAnimation {...BackgroundGradientAnimationProps}>
-        <div className="absolute inset-0 z-30 flex flex-col">
+        <div className="absolute inset-0 z-30 flex flex-col px-6">
           <Content />
         </div>
         <div className="absolute bottom-0 z-30 h-[2%] w-full bg-gradient-to-b from-transparent to-base-100" />
