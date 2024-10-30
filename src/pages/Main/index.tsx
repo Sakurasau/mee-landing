@@ -5,7 +5,7 @@ const MainPage: FC = () => {
   return (
     <>
       <MainSection />
-      {/* <h1 className="mx-auto max-w-7xl">
+      {/* <h1 className="mx-auto max-w-7xl text-wrap px-4">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fringilla
         luctus augue eu vehicula. Sed vehicula et neque vel ornare. Sed pulvinar
         nisi ornare, lacinia eros at, pellentesque odio. Donec accumsan, libero

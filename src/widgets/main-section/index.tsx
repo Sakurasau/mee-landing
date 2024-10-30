@@ -1,5 +1,7 @@
-import { H1 } from '@/shared/typography/typography'
+import { LineMdChevronUp } from '@/shared/icons/LineMdChevronUp'
+import { H1, H2 } from '@/shared/typography/typography'
 import { BackgroundGradientAnimation } from '@/shared/ui/background-gradient-animation'
+import { FlipWords } from '@/shared/ui/flip-words'
 import { FC } from 'react'
 
 const BackgroundGradientAnimationProps = {
@@ -14,18 +16,42 @@ const BackgroundGradientAnimationProps = {
   size: '80%',
 }
 
+const sloganWords = ['beautiful', 'seamless', 'powerful', 'effortless']
+
+const Content = () => (
+  <>
+    <div className="m-auto block text-wrap">
+      <H1>
+        Welcome to{' '}
+        <a className="text-primary" href="/c">
+          Mee
+        </a>
+      </H1>
+      <H2 className="w-[570px]">
+        The messenger that’s
+        <FlipWords words={sloganWords} />
+        for you
+      </H2>
+      <a
+        className="group btn btn-neutral btn-active ml-auto mt-6 flex w-fit text-lg text-primary"
+        href="/c">
+        Try Mee
+        <LineMdChevronUp className="inline-block size-6 rotate-90 transform transition-transform duration-200 group-hover:translate-x-1" />
+      </a>
+    </div>
+    {/* <button className="mx-auto flex flex-col items-center -space-y-1 p-2 text-center">
+          <P>scroll down</P>
+          <LineMdChevronUp className="size-5 rotate-180" />
+        </button> */}
+  </>
+)
+
 const MainSection: FC = () => {
   return (
     <section id="main" className="min-h-screen w-full">
       <BackgroundGradientAnimation {...BackgroundGradientAnimationProps}>
         <div className="absolute inset-0 z-30 flex flex-col">
-          <H1 className="m-auto block">
-            Welcome to <span className="text-primary">Mee</span>
-          </H1>
-          {/* <button className="mx-auto flex flex-col items-center -space-y-1 p-2 text-center">
-            <P>scroll down</P>
-            <LineMdChevronUp className="size-5 rotate-180" />
-          </button> */}
+          <Content />
         </div>
         <div className="absolute bottom-0 z-30 h-[2%] w-full bg-gradient-to-b from-transparent to-base-100" />
       </BackgroundGradientAnimation>
