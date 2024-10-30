@@ -1,3 +1,5 @@
+const defaultTheme = require('tailwindcss/defaultTheme')
+
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ['./src/**/*.{js,jsx,ts,tsx}'],
@@ -15,6 +17,9 @@ export default {
     ],
   },
   theme: {
+    fontFamily: {
+      sans: ['Rubik', ...defaultTheme.fontFamily.sans],
+    },
     extend: {
       animation: {
         first: 'moveVertical 30s ease infinite',
