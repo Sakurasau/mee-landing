@@ -8,7 +8,7 @@
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "serve": "serve -s dist -p 3001",
+    "serve": "serve -s dist -p $VITE_PORT",
     "prettier": "prettier --check .",
     "prettier:write": "prettier --write ."
   },
