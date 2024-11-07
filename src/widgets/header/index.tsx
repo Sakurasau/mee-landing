@@ -19,7 +19,10 @@ const Header: FC<HeaderProps> = ({ classNames }) => {
       <a
         className="h-auto w-full cursor-pointer gap-4 py-2 text-xl font-semibold"
         href="/">
-        <Avatar src="https://avatars.githubusercontent.com/u/175748523?s=200&v=4" />
+        <Avatar
+          backlight
+          src="https://avatars.githubusercontent.com/u/175748523?s=200&v=4"
+        />
         Sakurasau
         <a
           className="btn btn-ghost ml-auto"
