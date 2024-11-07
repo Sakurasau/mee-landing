@@ -25,8 +25,12 @@ COPY . .
 
 RUN pnpm install
 
+# Adding environment variables
+ARG PORT
+ENV VITE_PORT=${PORT}
+
 RUN pnpm run build
 
-EXPOSE 3001
+EXPOSE ${PORT}
 
 CMD ["pnpm", "run", "serve"]
